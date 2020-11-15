@@ -32,15 +32,22 @@ class MyApp extends StatelessWidget {
                 ],
               ),
               Card(
-                child: ClipRRect(
-                  borderRadius: BorderRadius.circular(15.0),
-                    child: Image.asset('images/ios14.png')),
-                shape: RoundedRectangleBorder(
-                  borderRadius: const BorderRadius.all(
-                    Radius.circular(20.0),
-                  )
+                
+                child: Column(
+                  children: <Widget>[
+                    Text('Nouveautés'),
+                    Container(
+                      child: ClipRRect(
+                        borderRadius: BorderRadius.circular(15.0),
+                          child: Image.asset('images/ios14.png')),
+                    ),
+
+                  ],
                 ),
+                
+                  
                 margin: EdgeInsets.only(left: 20.0, right: 20.0,top : 5.0),
+                
               )
             ],
           ),
