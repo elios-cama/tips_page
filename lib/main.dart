@@ -66,17 +66,34 @@ class MyApp extends StatelessWidget {
                     Padding(
                       padding: const EdgeInsets.only(left :20.0, top:15.0, bottom: 15.0),
                       child: Container(
-
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(15),
+                          color: Colors.grey[900],
+                        ),
                         height: 100,
                         width: 100.0,
-                        color: Colors.grey.shade900,
+
                         child: Center(
                           child: Image(
                             image: AssetImage('images/phone.png'),
                           ),
                         ),
                       ),
+                    ),
+                    Column(
+                      children: <Widget>[
+                        Text(
+                          " Bienvenue sur l'iPhone ",
+                          style : TextStyle(
+                            fontSize: 20.0,
+                            color : Colors.white,
+                            fontWeight: FontWeight.bold,
+                          ),
+
+                        ),
+                      ],
                     )
+
                 ],
               )
             ],
